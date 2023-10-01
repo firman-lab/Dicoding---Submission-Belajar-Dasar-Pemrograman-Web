@@ -2,6 +2,8 @@ body{
   font-family: 'Onest', sans-serif;
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background-color: #FAFAFA;
+
 }
 .nav {
   width: 100%;
@@ -11,7 +13,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 80px 16px 80px;
+  padding: 10px 80px 10px 80px;
 }
 .navbar img {
   width: auto;
@@ -30,9 +32,9 @@ body{
 .navbar ul li a {
   color: #171727;
   font-size: 14px;
-  font-size: 18px;
+  font-size: 16px;
   font-style:normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   text-decoration: none;
 }
@@ -48,13 +50,16 @@ body{
 }
 
 .hero{
+  background-color: #e4b7a72a;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 4rem 0rem 4rem 0rem;
 }
 
 .text-hero{
-  padding: px 0 1rem 0 1rem;
+  width: 50%;
+  padding-left: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,8 +76,7 @@ body{
   text-transform: capitalize; 
   margin: 0;
 }
-
-.title{
+.title-nav{
   color: #171727;
   font-family: 'Poppins', sans-serif;
   font-size: 52px;
@@ -81,4 +85,204 @@ body{
   line-height: 68px; /* 130.769% */
   text-transform: capitalize; 
   margin: 0;
+}
+.text-content{
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  color: #777;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 32.4px */ 
+}
+.btn-box{
+  display: flex;
+  align-items: flex-start;
+  gap: 30px; 
+}
+.btn-shop{
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize; 
+  border-radius: 12px;
+  background: #D38669;
+  padding: 16px 60px; 
+  text-decoration: none;
+  border-color: #D38669;  
+  border-style: solid;
+}
+.btn-shop:hover{
+  background:#af6448; 
+}
+.btn-order{
+  font-family: 'Poppins', sans-serif;
+  color:#D38669;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize; 
+  border-radius: 12px;
+  background: white;
+  padding: 16px 60px; 
+  text-decoration: none;
+  border-color: #D38669;  
+  border-style: solid;
+}
+.btn-order:hover{
+  background:#e4b7a72a;
+}
+.image-hero{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  
+}
+.image-tron{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.card-hero{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 24px;
+  top: 45%;
+  left: -100px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+.head-card{
+  color: #848484;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-bottom: 8px;
+}
+.select-room{
+  width: 15rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+#select-room{
+  font-family: 'Poppins', sans-serif;
+}
+.btn-input{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 18px;
+  width: 100%;
+  background: rgba(211, 134, 105, 0.10);
+  color: #D38669;
+  border-radius: 12px;
+  border-style: none;
+  font-weight: 500;
+  padding: 12px;
+}
+.btn-input:hover{
+  background: rgba(211, 133, 105, 0.171);
+  color: #D38669;
+}
+.img-left{
+  display: block;
+  padding-left: 100px;
+}
+
+
+
+
+/* * The container must be positioned relative: */ 
+.custom-select {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  width: 300px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+  width: 100%;
+}
+
+.select-selected {
+  background-color: #FAFAFA;
+  border-radius: 12px;
+  border-style: none;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #636363 transparent transparent transparent;
+  border-radius: 12px;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #4d4d4d transparent;
+  top: 12px;
+  
+}
+.select-selected.select-arrow-active{
+  /* border-color: transparent transparent #4d4d4d transparent; */
+  top: 12px;
+  border-color: #4d4d4d ;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 12px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  /* border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #FAFAFA;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 12px;
+ 
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #b9a49c2a;
+  border-radius: 8px;
 }
